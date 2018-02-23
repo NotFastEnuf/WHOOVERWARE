@@ -71,7 +71,7 @@
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
-#define LEVELMODE CHAN_6
+#define LEVELMODE CHAN_ON
 #define RATES CHAN_ON
 #define LEDS_ON CHAN_ON
 
