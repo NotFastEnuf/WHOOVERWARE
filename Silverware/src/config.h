@@ -65,15 +65,15 @@
 //*************Idle up-Arm switch
 //*************comment out to disable
 #define IDLE_UP CHAN_5
-#define IDLE_THR 0.05f
+#define IDLE_THR 0.01f
 
 //*************Assign feature to auxiliary channel.  NOTE - Switching on LEVELMODE is required for any leveling modes to 
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
 #define LEVELMODE CHAN_6
-	#define RACEMODE  CHAN_7
-	#define HORIZON   CHAN_8
+	#define RACEMODE  CHAN_OFF
+	#define HORIZON   CHAN_OFF
 #define RATES CHAN_ON
 #define LEDS_ON CHAN_ON
 
@@ -164,10 +164,10 @@
 // *************is very noise sensative so D term specifically has to be lowered and gyro/d filtering may need to be increased.
 // *************reccomendation right now is to leave boost at or below 2, drop your p gains a few points, then cut your D in half and 
 // *************retune it back up to where it feels good.  I'm finding about 60 to 65% of my previous D value seems to work.
-//#define TORQUE_BOOST 0.5
+#define TORQUE_BOOST 8.0
 
 // *************makes throttle feel more poppy - can intensify small throttle imbalances visible in FPV if factor is set too high
-//#define THROTTLE_TRANSIENT_COMPENSATION 
+#define THROTTLE_TRANSIENT_COMPENSATION 
 #define THROTTLE_TRANSIENT_COMPENSATION_FACTOR 4.0 
  
 // *************throttle angle compensation in level mode
