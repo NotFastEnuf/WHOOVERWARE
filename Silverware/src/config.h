@@ -65,7 +65,7 @@
 //*************Idle up-Arm switch
 //*************comment out to disable
 #define IDLE_UP CHAN_5
-#define IDLE_THR 0.05f
+#define IDLE_THR 0.01f
 
 //*************Assign feature to auxiliary channel.  NOTE - Switching on LEVELMODE is required for any leveling modes to 
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
