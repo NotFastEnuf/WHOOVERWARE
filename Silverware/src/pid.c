@@ -33,63 +33,28 @@ THE SOFTWARE.
 
 //************************************PIDS****************************************
 
-//7mm Whoop  NotFastEnuf "High and Tight Pids" -kalman gyro at 90hz, D 2nd at 100hz, motor filter at 90hz
-//                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 27.0e-2 , 27.0e-2  , 11.5e-1 }; 
-//float pidki[PIDNUMBER] = { 20.5e-1  , 20.5e-1 , 16e-1 };	
-//float pidkd[PIDNUMBER] = { 11.4e-1 , 11.4e-1  , 4.9e-1 };	
 
-//7mm Whoop  NotFastEnuf "Default Pids" -kalman gyro at 90hz, D 2nd at 100hz, motor filter at 90hz
-//      	                 ROLL       PITCH     YAW
-float pidkp[PIDNUMBER] = { 26.5e-2 , 26.5e-2  , 8.5e-1 }; 
-float pidki[PIDNUMBER] = { 16e-1  , 16e-1 , 13e-1 };	
-float pidkd[PIDNUMBER] = {11.1e-1 , 11.1e-1  , 4.9e-1 };
-
-//6mm Whoop -kalman gyro at 90hz, D 2nd at 100hz, motor filter at 90hz
+// 720 Whoover with 1 lift motor  
 //                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = {19.5e-2 , 19.5e-2  , 7.5e-1 }; 
-//float pidki[PIDNUMBER] = { 14e-1  , 15e-1 , 13e-1 };	
-//float pidkd[PIDNUMBER] = { 6.9e-1 , 6.9e-1  , 5.5e-1 };
-
-//BOSS 6 & 7 - 615 and 716 motors, hm830 46mm props  -1st gyro at 70hz, D 2nd at 80hz, motor filter at 70hz
-//                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 24.5e-2 , 24.5e-2  , 9.5e-1 }; 
-//float pidki[PIDNUMBER] = { 12e-1  , 12e-1 , 8e-1 };	
-//float pidkd[PIDNUMBER] = {14.1e-1 , 14.1e-1  , 7e-1 };
-
-//(EXPERIMENTAL) BOSS 7 with TORQUE_BOOST at 2.0 - same gyro & d filters as regular boss 7 tune
-//                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 22.7e-2 , 22.7e-2  , 9.5e-1 }; 
-//float pidki[PIDNUMBER] = { 12e-1  , 12e-1 , 8e-1 };	
-//float pidkd[PIDNUMBER] = {8.7e-1 , 8.7e-1  , 0e-1 };	
-
-//BOSS 8.0 - 816 motors, kingkong 66mm props  -kalman gyro at 90hz, D 2nd at 100hz, motor filter at 90hz
-//                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 26.7e-2 , 26.7e-2  , 9.5e-1 }; 
-//float pidki[PIDNUMBER] = { 12e-1  , 12e-1 , 8e-1 };	
-//float pidkd[PIDNUMBER] = {16.2e-1 , 16.2e-1  , 7e-1 };	
-
-//BOSS 8.5 - 820 motors, kingkong 66mm props  -kalman at 80hz, D 2nd at 90hz, motor filter at 90hz
-//                         ROLL       PITCH     YAW
-//float pidkp[PIDNUMBER] = { 29.5e-2 , 29.5e-2  , 11.5e-1 }; 
-//float pidki[PIDNUMBER] = { 12e-1  , 12e-1 , 12.0e-1 };	
-//float pidkd[PIDNUMBER] = {17.5e-1 , 17.5e-1  , 7e-1 };
+float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 7.5e-1 }; 
+float pidki[PIDNUMBER] = { 5e-1  , 5e-1 , 13e-1 };	
+float pidkd[PIDNUMBER] = { 4.9e-1 , 4.9e-1  , 40e-1 };
 
 
 //************************************Setpoint Weight****************************************
 // "setpoint weighting" 0.0 - 1.0 where 1.0 = normal pid
 #define ENABLE_SETPOINT_WEIGHTING
 //            Roll   Pitch   Yaw
-float b[3] = { 0.93 , 0.95 , 0.9};
+float b[3] = { 1.0 , 1.0 , 0.9};
 
 
 
 
 /// output limit			
-const float outlimit[PIDNUMBER] = { 1.7 , 1.7 , 0.5 };
+const float outlimit[PIDNUMBER] = { 0.8 , 0.8 , 0.5 };
 
 // limit of integral term (abs)
-const float integrallimit[PIDNUMBER] = { 1.7 , 1.7 , 0.5 };
+const float integrallimit[PIDNUMBER] = { 0.05 , 0.05 , 0.5 };
 
 //#define RECTANGULAR_RULE_INTEGRAL
 //#define MIDPOINT_RULE_INTEGRAL
