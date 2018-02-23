@@ -65,7 +65,7 @@
 //*************Idle up-Arm switch
 //*************comment out to disable
 #define IDLE_UP CHAN_5
-#define IDLE_THR 0.01f
+#define IDLE_THR 0.05f
 
 //*************Assign feature to auxiliary channel.  NOTE - Switching on LEVELMODE is required for any leveling modes to 
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
@@ -176,12 +176,12 @@
 // *************mix lower throttle reduces thrust imbalances by reducing throttle proportionally to the adjustable reduction percent
 // *************mix increase throttle increases the authority of the pid controller at lowest throttle values like airmode when combined with idle up
 // *************mix3 has a stronger effect and works better with brushless
-#define MIX_LOWER_THROTTLE
+//#define MIX_LOWER_THROTTLE
 #define MIX_THROTTLE_REDUCTION_PERCENT 10
 //#define MIX_INCREASE_THROTTLE
 
 //#define MIX_LOWER_THROTTLE_3
-#define MIX_INCREASE_THROTTLE_3
+//#define MIX_INCREASE_THROTTLE_3
 
 // *************invert yaw pid for "PROPS OUT" configuration
 //#define INVERT_YAW_PID
