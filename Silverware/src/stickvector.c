@@ -29,8 +29,8 @@ if ( last_rx[0] == rx_input[0] && last_rx[1] == rx_input[1] )
 }
 else
 {
-    last_rx[0] = rx_input[0];
-    last_rx[1] = rx_input[1]; 
+    last_rx[0] = 0;  //rx_input[0];   Remove Stick control over roll and pitch axis
+    last_rx[1] = 0;  //rx_input[1]; 
 	
 	
 float pitch, roll;
