@@ -36,9 +36,9 @@ THE SOFTWARE.
 
 // 720 Whoover with 1 lift motor  
 //                         ROLL       PITCH     YAW
-float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 7.5e-1 }; 
+float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 12.5e-1 }; 
 float pidki[PIDNUMBER] = { 5e-1  , 5e-1 , 13e-1 };	
-float pidkd[PIDNUMBER] = { 4.9e-1 , 4.9e-1  , 40e-1 };
+float pidkd[PIDNUMBER] = { 4.9e-1 , 4.9e-1  , 7e-1 };
 
 
 //************************************Setpoint Weight****************************************
