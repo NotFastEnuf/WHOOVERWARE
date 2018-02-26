@@ -34,11 +34,18 @@ THE SOFTWARE.
 //************************************PIDS****************************************
 
 
-// 720 Whoover with 1 lift motor  
+// 716 Whoover with 1 lift motor and whoop porps - RUN TORQUE BOOST AT 8 (adjust in config.h)
 //                         ROLL       PITCH     YAW
-float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 12.5e-1 }; 
+float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 3.5e-1 }; 
 float pidki[PIDNUMBER] = { 5e-1  , 5e-1 , 13e-1 };	
 float pidkd[PIDNUMBER] = { 4.9e-1 , 4.9e-1  , 7e-1 };
+
+
+// 720 Whoover with 1 lift motor and 45mm props - RUN TORQUE BOOST AT 12 (adjust in config.h)
+//                         ROLL       PITCH     YAW
+//float pidkp[PIDNUMBER] = {12.5e-2 , 12.5e-2  , 12.5e-1 }; 
+//float pidki[PIDNUMBER] = { 5e-1  , 5e-1 , 13e-1 };	
+//float pidkd[PIDNUMBER] = { 4.9e-1 , 4.9e-1  , 7e-1 };
 
 
 //************************************Setpoint Weight****************************************
