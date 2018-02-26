@@ -1,13 +1,15 @@
 [![Build Status](https://travis-ci.org/silver13/BoldClash-BWHOOP-B-03.svg?branch=master)](https://travis-ci.org/silver13/BoldClash-BWHOOP-B-03)
 
 ## NotFastEnuf Notes - Bwhoop B03 Silverware modified FOR TINY WHOOVERS to work on BWHOOP, E011, H8mini_blue_board, or BetaFPV Lite.
-Last major update 2.23.18
+Last major update 2.25.18
 
 ##  CURRENT WHOOVER CONFIGURATION IS THROTTLE AND YAW MAPPED TO PUSH MOTORS - PITCH STICK IS MAPPED TO LIFT MOTORS AS A THROTTLE - WHOOVER ARMS/HOVERS UP ON AUX CHANNEL 5.
 
 ##  LOTS OF WORK STILL NEEDS TO BE DONE TO CLEAN UP CONFIG.H & README NOTES TO MAKE IT MORE TAYLORED TO TINY WHOOVERS - BUT THIS IS CURRENTLY TUNED, TESTED, AND WORKING FIRMWARE!!!!!!!!!
 
-OLD nfe SILVERWARE NOTES BELOW - TO BE CLEANED UP LATER - SOME OF THIS STILL APPLIES LIKE BOARD TYPE, RADIO TYPE, AND LOW VOLTAGE SETTINGS.  EVERYTHING ELSE SHOULD RUN FINE AS IS FOR WHOOVING
+2.25.18 - Changed default pids to match 716 motors with whoop props.  Pid.c file also has pids for 720 motors and 45mm props commented out if needed to match your build.  If you need to adjust the tune ... YAW P and torque boost have the most effect.  D is also improtant but torque boost is very similar to D.  I seems to be fine no matter what build.
+
+## OLD nfe SILVERWARE NOTES BELOW - TO BE CLEANED UP LATER - SOME OF THIS STILL APPLIES LIKE BOARD TYPE, RADIO TYPE, AND LOW VOLTAGE SETTINGS.  EVERYTHING ELSE SHOULD RUN FINE AS IS FOR WHOOVING
 Testing a new layout for config.h  - feel free to let me know what you think.  Your feedback is appreciated. 
 
 There are two main steps to prep this file for flash.  The first will be in config.h and the second will be in pid.c file.
