@@ -23,7 +23,7 @@ float stickvector[3] = { 0 , 0 , 1};
 void stick_vector( float rx_input[] , float maxangle)
 {
 // only compute stick rotation if values changed
-if ( last_rx[0] == rx_input[0] && last_rx[1] == rx_input[1] )
+if ( last_rx[0] == 0 && last_rx[1] == 0 )  //Remove Stick control over roll and pitch axis
 {
      
 }
