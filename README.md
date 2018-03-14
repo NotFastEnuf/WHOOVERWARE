@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.org/silver13/BoldClash-BWHOOP-B-03.svg?branch=master)](https://travis-ci.org/silver13/BoldClash-BWHOOP-B-03)
 
 ## NotFastEnuf Notes - Bwhoop B03 Silverware modified FOR TINY WHOOVERS to work on BWHOOP, E011, H8mini_blue_board, or BetaFPV Lite.
-Last major update 2.25.18
+Last major update 3.13.18
+
+ - AUTOBIND Has been added.  Set a fixed ID in your TX.  Stick gesture comand up-up-up to turn on autobind. Quad will flash once.  Stick gesture Down-Down-Down will save your fixed ID.  Unplug battery and plug in to verify.  No more power cycling TX to bind.
 
 ##  CURRENT WHOOVER CONFIGURATION IS THROTTLE AND YAW MAPPED TO PUSH MOTORS - PITCH STICK IS MAPPED TO LIFT MOTORS AS A THROTTLE - WHOOVER ARMS/HOVERS UP ON AUX CHANNEL 5.
 
