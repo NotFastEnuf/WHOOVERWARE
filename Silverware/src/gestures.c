@@ -47,13 +47,17 @@ void gestures( void)
 			    // reset loop time 
 			    extern unsigned long lastlooptime;
 			    lastlooptime = gettime();
-		    }		
+		    }	
+			
             if (command == GESTURE_UUU)
-              {
+              {  
+								#ifdef RX_BAYANG_PROTOCOL_TELEMETRY	
                  extern int rx_bind_enable;
                  rx_bind_enable=!rx_bind_enable;
                  ledblink = 2 - rx_bind_enable;
+								#endif
               }
+
               
             if (command == GESTURE_RRD)
               {

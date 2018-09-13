@@ -11,8 +11,8 @@ GPIO_InitTypeDef mosi_init_struct;
 int mosi_out = 0;
 
 void spi_init(void)
-{    
-	// spi port inits
+{   	// spi port inits
+
 
 		GPIO_InitTypeDef  GPIO_InitStructure;
 	
