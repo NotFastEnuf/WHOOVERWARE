@@ -362,8 +362,8 @@ else
 	
 	
 	// whoover mixer - apply lift throttle to lift motors and yaw pidoutput & throttle to push motors
-		mix[MOTOR_FR] = throttleLift ;				// FR - lift motor
-		mix[MOTOR_FL] = throttleLift ;				// FL - lift motor
+		mix[MOTOR_FR] = throttle ;//throttleLift ;				// FR - lift motor
+		mix[MOTOR_FL] = throttle ;//throttleLift ;				// FL - lift motor
 		mix[MOTOR_BR] = throttle - pidoutput[YAW] ;		// BR - push motor
 		mix[MOTOR_BL] = throttle + pidoutput[YAW] ;		// BL - push motor
 	

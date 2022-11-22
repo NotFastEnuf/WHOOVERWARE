@@ -24,7 +24,7 @@
 // *************rate in deg/sec
 // *************for acro mode
 #define MAX_RATE 860.0
-#define MAX_RATEYAW 500.0
+#define MAX_RATEYAW 300.0
 
 // *************max angle for level mode
 #define MAX_ANGLE_HI 70.0f
@@ -50,12 +50,14 @@
 //#define RX_BAYANG_PROTOCOL_BLE_BEACON
 //#define RX_BAYANG_BLE_APP
 //#define RX_CX10BLUE_PROTOCOL
-#define RX_SBUS
+//#define RX_SBUS
+#define RX_DSMX_2048
+//#define RX_DSM2_1024
 
 // *************Transmitter Type Selection
 //#define USE_STOCK_TX
-//#define USE_DEVO
-#define USE_MULTI
+#define USE_DEVO
+//#define USE_MULTI
 
 // *******************************SWITCH SELECTION*****************************
 // *************CHAN_ON - on always ( all protocols)
@@ -428,7 +430,8 @@
 #define GYRO_ID_2 0x98 // new id
 #define GYRO_ID_3 0x7D
 #define GYRO_ID_4 0x72
-#define SENSOR_ROTATE_90_CW
+#define SENSOR_ROTATE_90_CCW
+#define SENSOR_FLIP_180
 #define SOFTI2C_PUSHPULL_CLK
 
 // SPI PINS DEFINITONS & RADIO
@@ -467,9 +470,9 @@
 #define ADC_REF 1.17857f
 
 // Assingment of pin to motor
-#define MOTOR0_PIN_PA6 // motor 0 back-left
+#define MOTOR0_PIN_PB1 // motor 0 back-left
 #define MOTOR1_PIN_PA4 // motor 1 front-left
-#define MOTOR2_PIN_PB1 // motor 2 back-right
+#define MOTOR2_PIN_PA6 // motor 2 back-right
 #define MOTOR3_PIN_PA7 // motor 3 front-right
 #endif
 
@@ -596,11 +599,11 @@
 
 // MOTOR PINS
 // MOTOR PINS
-#define MOTOR0_PIN_PA7
+#define MOTOR0_PIN_PA4 //MOTOR0_PIN_PA7  motors 0 and 2 are swapped right now
 //#define MOTOR1_PIN_PA4  //2nd Draft prototype patch
 //#define MOTOR2_PIN_PB1  //2nd Draft prototype patch
 #define MOTOR1_PIN_PB1
-#define MOTOR2_PIN_PA4
+#define MOTOR2_PIN_PA7 //MOTOR2_PIN_PA4
 #define MOTOR3_PIN_PA6
 #endif
 
